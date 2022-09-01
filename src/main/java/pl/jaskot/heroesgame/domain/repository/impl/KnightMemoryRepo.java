@@ -1,8 +1,9 @@
-package pl.jaskot.heroesgame.domain.repository;
+package pl.jaskot.heroesgame.domain.repository.impl;
 
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Repository;
 import pl.jaskot.heroesgame.domain.Knight;
+import pl.jaskot.heroesgame.domain.repository.KnightRepo;
 
 import javax.annotation.PostConstruct;
 import java.util.Collection;
@@ -39,6 +40,11 @@ public class KnightMemoryRepo implements KnightRepo {
     @Override
     public void deleteKnight(String name){
         knights.remove(name);
+    }
+
+    @Override
+    public void saveKnight(Knight knight) {
+        knights.put(knight.getName(),knight);
     }
 
 }

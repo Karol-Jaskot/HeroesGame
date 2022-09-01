@@ -1,12 +1,13 @@
-package pl.jaskot.heroesgame.domain.repository;
+package pl.jaskot.heroesgame.domain.repository.impl;
 
 import org.springframework.stereotype.Repository;
 import pl.jaskot.heroesgame.domain.Knight;
+import pl.jaskot.heroesgame.domain.repository.KnightRepo;
 
 import javax.annotation.PostConstruct;
 import java.util.Collection;
 
-public class KnightDbRepo implements KnightRepo{
+public class KnightDbRepo implements KnightRepo {
 
     @Override
     @PostConstruct
@@ -34,5 +35,10 @@ public class KnightDbRepo implements KnightRepo{
     @Override
     public void deleteKnight(String name) {
         System.out.println("Leci z bazy danych");
+    }
+
+    @Override
+    public void saveKnight(Knight knight) {
+
     }
 }

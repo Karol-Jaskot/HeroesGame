@@ -1,10 +1,8 @@
 package pl.jaskot.heroesgame.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import pl.jaskot.heroesgame.domain.Quest;
-import pl.jaskot.heroesgame.domain.repository.KnightMemoryRepo;
 import pl.jaskot.heroesgame.domain.repository.KnightRepo;
 import pl.jaskot.heroesgame.domain.repository.QuestRepo;
 

@@ -18,4 +18,6 @@ public interface KnightRepo {
     Knight getKnight(String name);
 
     void deleteKnight(String name);
+
+    void saveKnight(Knight knight);
 }

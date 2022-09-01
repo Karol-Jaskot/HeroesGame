@@ -3,8 +3,8 @@ package pl.jaskot.heroesgame.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
-import pl.jaskot.heroesgame.domain.repository.KnightDbRepo;
-import pl.jaskot.heroesgame.domain.repository.KnightMemoryRepo;
+import pl.jaskot.heroesgame.domain.repository.impl.KnightDbRepo;
+import pl.jaskot.heroesgame.domain.repository.impl.KnightMemoryRepo;
 import pl.jaskot.heroesgame.domain.repository.KnightRepo;
 
 @Configuration
